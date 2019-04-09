@@ -1,0 +1,360 @@
+
+$color-gray: #8494ab;
+$color-white: #ffffff;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0 !important;
+}
+
+html 
+{ overflow-x:  hidden}
+a {text-decoration: none}
+a:link {color: #ffffff}
+a:visited {color: #ffffff}
+
+.loginout a:link {color: #808592 !important}
+.pay a:link {color: #808592 !important}
+.loginout a:visited {color: #808592 !important}
+.pay a:visited {color: #808592 !important}
+html, body, .container {
+  height: 100%;
+}
+
+@font-face {font-family: "open-sans-bold";    
+  src: url(../fonts/OpenSans-Bold.ttf)}
+
+@font-face {font-family: "Tele2RussiaTextBold";
+src: url(../fonts/Tele2RussiaText-Bold.otf)}
+
+@font-face {font-family: "Arial";
+  src: url(../fonts/Arial.ttf)}
+
+.wrapper {
+  max-width: 1200px;
+  background-color: #101114;
+  padding-top: 82px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+
+.main {
+  width: 639px;
+}
+
+
+// боковое меню
+.aside-menu {
+  margin-left: 124px;
+}
+
+.personal_account, .history {    
+  background-color: #1f2229;
+  width: 295px;
+  font-family: open-sans-bold;
+  padding-left: 29px;
+  line-height: 50px;
+}
+
+.personal_account:hover, .pay:hover, .history:hover, .settings:hover, .loginout:hover {
+  background-color: #2a2d37;
+}
+
+.personal_account a:hover, .pay a:hover, .history a:hover, .settings a:hover, .loginout a:hover {
+  color: #808592 !important;
+}
+.pay {  
+  width: 295px;
+  font-family: open-sans-bold;
+  background-color: #2a2d37;
+  padding-left: 29px;
+  line-height: 50px;
+}
+
+.settings, .loginout {
+  background-color: #191c24;
+  width: 295px;
+  border-top: solid 1px #20232b;
+  font-family: open-sans-bold;
+  color: #808592;
+  padding-left: 29px;
+  line-height: 50px;
+}
+
+// Основной блок страницы 
+
+.card {
+  background-color: #f7f8f8;
+  font-family: open-sans-bold;
+  color: $color-gray;
+}
+
+.card-pay-info {
+  padding: 50px 0px 40px 30px;
+}
+
+.card-pay-info h4 {
+  padding-bottom: 20px}
+
+.card-info-about-pay {
+  font-family: Arial;
+}
+
+.card-info-about-pay-data {
+  color: #535864;
+  font-family: Arial;
+  font-size: 16px;
+  margin-left: 56px;
+}
+
+.card-out {    
+  // width: 747px;
+  box-sizing: border-box;}
+
+  
+.card-out h2 {
+  padding-left: 28px;
+  padding-bottom: 24px;
+  color: #383d43;
+  font-family: open-sans-bold;
+  font-size: 22px
+}
+
+// Передняя сторона карты
+
+.card-number {
+  background-color: #f7f8f8;
+  border: 2px solid #e4e9ee;
+  height: 243px;
+  max-width: 350px;
+  min-width: 278px;
+  margin-left: 31px;
+  border-radius: 15px;
+  position: relative;
+  padding-left: 21px;
+ 
+}
+
+.card-number h3 {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #8494ab;
+  font-family: Arial;
+}  
+
+.card-number-box{
+  width: 18%;
+  border: 1px solid #e4e9ee;
+  text-align: center;
+  font-size: 15px;
+  margin-top: -10px;
+  padding-bottom: 12px;
+  padding-top: 10px;
+}
+
+.card-name {
+  width: 86%;
+  border: 1px solid #e4e9ee;
+  font-size: 15px;
+  margin-top: 12px;
+  padding-left: 7px;
+  color: #1f2229;
+  padding-top: 11px;
+  padding-bottom: 11px
+}
+
+.card-name::placeholder {color: #bec6cf}
+
+.select-date-month {
+  background: url(../img/strelka.png) ;
+  -webkit-appearance: none;
+  padding-left: 5px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position-x: 37px;
+  background-position-y: 15px;
+  width: 70px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid #e4e9ee;
+  padding-left: 14px
+}
+
+.select-date-year {
+  background: url(../img/strelka.png) ;
+  -webkit-appearance: none;
+  padding-left: 5px;
+  background-color: white;
+  background-repeat: no-repeat;
+  width: 85px;
+  background-position-x: 53px;
+  background-position-y: 15px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid #e4e9ee;
+  padding-left: 14px
+}
+
+.CVV2 {
+  max-width: 94px;
+  border: 2px solid #e4e9ee;
+  -webkit-appearance: none;
+  background: url(../img/podskazka.png);
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position-x: 95px;
+  background-position-y: 6px;
+  background-size: 30px;
+  font-size: 19px;
+  padding-left: 39px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  float: right;
+  margin-right: 20px;
+}
+
+// Задняя сторона карты 
+
+.card-inner {        
+  background-color: #f7f8f8;
+  border: 2px solid #e4e9ee;
+  max-width: 378px;
+  border-radius: 15px;
+  margin-top: -213px;
+  margin-left: 226px;
+  padding-bottom: 97px;
+  height: 147px;
+  min-width: 298px;
+
+}
+
+.code {    
+  text-align: right;
+  margin-top: 19px;
+  margin-right: 29px;
+  font-family: Arial;
+  font-size: 16px;
+  color: #8494ab;
+
+}
+
+.line {    
+  width: 100%;
+  background-color: #e4e9ee;
+  margin-top: 26px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+// Кнопка "ОПЛАТИТЬ"
+.button {    
+  background: #0059be;
+  width: 133px;
+  color: #ffffff;
+  line-height: 38px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 38px;
+  margin-left: 20px;
+  margin-top: 23px;
+  margin-left: 43px;
+  -webkit-transform: .2s;
+  transform: .2s;
+  font-family: open-sans-bold;
+  margin-bottom: 45px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.button:hover {
+  transform: scale(1.1);
+}
+
+// Нижний блок с информацией 
+.footer-section {
+  background-color: #373c43;
+  color: rgb(119, 125, 137);
+  font-family: Arial;
+  font-size: 12px;
+  padding: 28px 46px 33px 30px;
+}
+
+
+// кнопка для адаптивного меню 
+.mini-menu-button{
+  display: none;
+  color: white;
+  height: 37px;
+  width: 891px;
+  cursor: pointer;
+  color: #383d43;
+  font-size: 22px;
+  background-color: #f7f8f8;
+  text-align: right;
+  font-family: open-sans-bold;
+  padding-right: 58px;
+  padding-top: 9px;
+  position: absolute;
+  right: -4px;
+}
+
+
+// Красная рамка для некорректно заполненных полей 
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.mini-menu-mobile {
+  display: none}
+
+@media (max-width: 1024px){
+  .wrapper {
+    padding-top: 0;}
+  .main {
+    width: 100%}
+
+  .card-number{
+    margin-left: 13px;
+    margin-right: 13px
+  }
+  .card-inner {
+    margin-top: 0;
+    margin-left: 13px;
+    margin-right: 13px
+  }
+  .some-text {
+    font-size: 100vh;
+    line-height: 100vh;
+}
+
+  // Адаптивное меню
+
+  .aside-menu {
+    display: none}
+
+  .mini-menu-button {
+    display: block;}
+
+  .mini-menu-mobile { 
+    position: fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    left: 0;
+    background: #0f0b20f0;
+    z-index: 999999999;
+    display: none;}
+
+  .mini-menu-mobile-block {
+    width: 295px;
+    font-family: open-sans-bold;
+    padding-left: 29px;
+    line-height: 50px;
+    padding-top: 29px}
+}
